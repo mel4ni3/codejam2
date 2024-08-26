@@ -58,8 +58,8 @@ public class TicTacToe
             string figletText = FiggleFonts.Chiseled.Render("It's a draw!");
             Colorful.Console.WriteLine(figletText);
         }
-        string figletText = FiggleFonts.Chiseled.Render("Press r to restart!");
-        Colorful.Console.WriteLine(figletText);
+        string restartText = "Press r to restart!";
+        Colorful.Console.WriteLine(restartText);
         char restart = char.Parse(Console.ReadLine());
         if (restart == 'r' || restart =='R')
         {
