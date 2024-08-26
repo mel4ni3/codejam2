@@ -8,7 +8,7 @@ using System.Text;
 
 public static class Program
 {
-    public static void Main(string[] args)
+    public static void Main() //not passing in any arguments from console, so removed string[] args
     {
         System.Console.BackgroundColor = ConsoleColor.DarkMagenta;
         System.Console.Clear();

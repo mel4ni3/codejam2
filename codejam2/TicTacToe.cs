@@ -41,11 +41,11 @@ public class TicTacToe
                 string figletText = FiggleFonts.Cosmic.Render("Player 0 wins!");
                 Colorful.Console.WriteLine(figletText);
 
-                
+
                 //Figlet figlet = new Figlet();
 
                 //Colorful.Console.WriteLine(figlet.ToAscii("Player 0 wins!"), ColorTranslator.FromHtml("#8AF!FEF"));
-                
+
             }
             else
             {
@@ -58,11 +58,18 @@ public class TicTacToe
             string figletText = FiggleFonts.Chiseled.Render("It's a draw!");
             Colorful.Console.WriteLine(figletText);
         }
+        string figletText = FiggleFonts.Chiseled.Render("Press r to restart!");
+        Colorful.Console.WriteLine(figletText);
+        char restart = char.Parse(Console.ReadLine());
+        if (restart == 'r' || restart =='R')
+        {
+            Program.Main();
+        }
     }
 
     private static void PrintBoard()
     {
-        Console.WriteLine($" {board[0]} | {board[1]} | {board[2]} ");
+        Console.WriteLine($" {board[0]} | {board[1]} | {board[2]} "); 
         Console.WriteLine("---|---|---");
         Console.WriteLine($" {board[3]} | {board[4]} | {board[5]} ");
         Console.WriteLine("---|---|---");
